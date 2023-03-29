@@ -1,0 +1,260 @@
+/* 폰트 */
+@font-face {
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본태그 css */
+a {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-size: 2.5rem;
+}
+section {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 헤더부분 */
+.header {
+    background-color: #2D3192cc;
+    width: 100%;
+    position: fixed;
+}
+.nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.nav>.nav-logo {
+    width: 160px;
+    text-align: center;
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 1.5rem;
+}
+.nav>.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'TAEBAEKmilkyway';
+    font-size: 1.2rem;
+    width: 40%;
+}
+.nav>.nav-menu>li {
+    padding: 10px;
+}
+
+/* 섹션1 시작 */
+.section1 {
+    background-image: url(../img/festival.jpg);
+    width: 100%;
+    min-height: 400px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.section1>.section1-text {
+    padding: 250px 0 0 20px;
+    text-align: right;
+}
+/*h1태그 폰트크기가 위에서 고정되어서 따로 작성해줌*/
+.section1>.section1-text h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'HS-Regular';
+}
+.section1>.section1-text h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'HS-Regular';
+}
+
+/* 섹션2 시작 */
+.section2 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.section2>.section2-desc>h1 {
+    font-size: 2.5rem;
+    font-family: 'HS-Regular';
+    padding-bottom: 10px;
+}
+.section2>.section2-desc>h3 {
+    font-family: 'TAEBAEKmilkyway';
+    padding-bottom: 30px;
+    color: #2D3192;
+}
+.section2>table {
+    margin: auto;
+}
+.section2>table td:first-child {
+    color: #2D3192;
+    border-right: 2px solid #2D3192;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.section2>table td {
+    padding: 5px 10px;
+}
+
+/* 섹션3 갤러리 시작 */
+.section3 {
+    padding-bottom: 60px;
+}
+.section3>.section3-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section3>.section3-text h1 {
+    font-family: 'HS-Regular';
+    font-size: 2.5rem;
+}
+.section3>.section3-text a {
+    background-color: #2D3192;
+    padding: 10px;
+    border-radius: 15px;
+}
+.section3>.gallery-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.gallery-box {
+    display: inline-block;
+    background-color: gray;
+    width: 250px;
+    min-height: 360px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: visible;
+}
+.gallery-img {
+    background-image: url(../img/festival.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 220px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+/*섹션4 행사뉴스 시작*/
+.section4 {
+    height: 350px;
+}
+.section4 h1 {
+    font-family: 'HS-Regular';
+    font-size: 2.5rem;
+    padding-bottom: 60px;
+}
+.section4>table {
+    margin: auto;
+    width: 80%;
+}
+.section4>table tr {
+    color: #2D3192;
+    border-top: 2px #2D3192 solid;
+    border-bottom: 2px #2D3192 solid;
+}
+.section4>table td {
+    padding: 15px 0;
+}
+.section4>table td:first-child {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* 푸터시작 */
+.footer {
+    background-color: rgb(201, 201, 201);
+    color: rgb(95, 95, 95);
+    height: 80px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer img {
+    width: 45px;
+    height: 45px;
+}
+.footer-text {
+}
+.footer>.footer-text>p {
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+.footer>.footer-text>p:last-child {
+    clear: both;
+    padding: 0;
+}
+.topbutton {
+    background-color: #2D3192;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+/* nav 모바일 버튼 */
+.nav-button {
+    background-image: url(../img/bars-solid.svg);
+    width: 35px;
+    height: 45px;
+    display: none;
+    cursor: pointer;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    .header {background-color: #EB5D99cc;}
+    .nav-button {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        transition: all 0.5s;
+        height: 60px;
+    }
+    .nav-menu>li {
+        display: none;
+    }
+    .nav-button:hover+.nav-menu,
+    .nav-menu:hover {
+        height: 100vh;
+        transition: all 0.5s;
+    }
+    .nav-button:hover+.nav-menu>li,
+    .nav-menu:hover>li {
+        display: inline-block;
+    }
+}
